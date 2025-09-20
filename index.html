@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem Objetiva vs Subjetiva - Aprende Português</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>📚 Linguagem: Objetiva vs Subjetiva</h1>
+            </div>
+            <div class="nav-links">
+                <button class="nav-btn active" data-section="inicio">Início</button>
+                <button class="nav-btn" data-section="teoria">Aprende</button>
+                <button class="nav-btn" data-section="exemplos">Exemplos</button>
+                <button class="nav-btn" data-section="exercicios">Exercícios</button>
+                <button class="nav-btn" data-section="quiz">Quiz</button>
+                <button class="nav-btn" data-section="resumo">Resumo</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de Progresso -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Secção Início -->
+    <section id="inicio" class="section active">
+        <div class="container">
+            <div class="hero">
+                <h1>🎯 Domina a Linguagem Objetiva e Subjetiva</h1>
+                <p class="hero-subtitle">Uma aplicação completa para alunos do 8º e 9º ano aprenderem a distinguir entre linguagem objetiva e subjetiva de forma interativa e divertida!</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📖</div>
+                        <h3>Teoria Completa</h3>
+                        <p>Explicações claras com definições, características e exemplos práticos.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">💡</div>
+                        <h3>Exemplos Interativos</h3>
+                        <p>Compara textos objetivos e subjetivos lado a lado de forma dinâmica.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Exercícios Práticos</h3>
+                        <p>Testa os teus conhecimentos com feedback imediato e explicações detalhadas.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎖️</div>
+                        <h3>Quiz Final</h3>
+                        <p>Avalia o teu domínio e consegue um certificado digital!</p>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <button class="btn btn--primary btn--lg" onclick="startLearning()">Começar a Aprender</button>
+                    <p class="cta-text">Tempo estimado: 30-45 minutos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Teoria -->
+    <section id="teoria" class="section">
+        <div class="container">
+            <h1>📚 Aprende: Linguagem Objetiva vs Subjetiva</h1>
+            
+            <div class="theory-grid">
+                <!-- Linguagem Objetiva -->
+                <div class="theory-card objetiva-card">
+                    <div class="card-header">
+                        <h2>🎯 Linguagem Objetiva</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="definition">
+                            <h3>Definição:</h3>
+                            <p>A linguagem objetiva apresenta informações de forma imparcial, clara e direta, sem incluir opiniões pessoais ou juízos de valor. Baseia-se em factos verificáveis e utiliza o sentido denotativo das palavras.</p>
+                        </div>
+                        
+                        <div class="characteristics">
+                            <h3>Características:</h3>
+                            <ul>
+                                <li>✓ Utiliza factos concretos e dados verificáveis</li>
+                                <li>✓ Emprega linguagem denotativa (sentido literal)</li>
+                                <li>✓ Evita adjetivos subjetivos</li>
+                                <li>✓ Usa terceira pessoa</li>
+                                <li>✓ Tom imparcial e neutro</li>
+                                <li>✓ Finalidade informativa</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="examples-location">
+                            <h3>Onde encontrar:</h3>
+                            <div class="location-tags">
+                                <span class="tag">Notícias jornalísticas</span>
+                                <span class="tag">Textos científicos</span>
+                                <span class="tag">Manuais de instruções</span>
+                                <span class="tag">Relatórios técnicos</span>
+                                <span class="tag">Bulas de medicamentos</span>
+                                <span class="tag">Documentos oficiais</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linguagem Subjetiva -->
+                <div class="theory-card subjetiva-card">
+                    <div class="card-header">
+                        <h2>🎨 Linguagem Subjetiva</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="definition">
+                            <h3>Definição:</h3>
+                            <p>A linguagem subjetiva expressa opiniões, sentimentos e impressões pessoais do autor. Utiliza o sentido conotativo das palavras e inclui juízos de valor e interpretações pessoais.</p>
+                        </div>
+                        
+                        <div class="characteristics">
+                            <h3>Características:</h3>
+                            <ul>
+                                <li>✓ Expressa opiniões e sentimentos</li>
+                                <li>✓ Emprega linguagem conotativa (sentido figurado)</li>
+                                <li>✓ Rica em adjetivos valorativos</li>
+                                <li>✓ Pode usar primeira pessoa</li>
+                                <li>✓ Tom pessoal e emotivo</li>
+                                <li>✓ Finalidade expressiva ou persuasiva</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="examples-location">
+                            <h3>Onde encontrar:</h3>
+                            <div class="location-tags">
+                                <span class="tag">Textos literários</span>
+                                <span class="tag">Crónicas</span>
+                                <span class="tag">Artigos de opinião</span>
+                                <span class="tag">Críticas de cinema/livros</span>
+                                <span class="tag">Publicidade</span>
+                                <span class="tag">Cartas pessoais</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comparison-table">
+                <h2>📊 Comparação Rápida</h2>
+                <table class="comparison">
+                    <thead>
+                        <tr>
+                            <th>Aspeto</th>
+                            <th class="objetiva-col">Linguagem Objetiva</th>
+                            <th class="subjetiva-col">Linguagem Subjetiva</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Finalidade</strong></td>
+                            <td>Informar</td>
+                            <td>Expressar/Persuadir</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tom</strong></td>
+                            <td>Imparcial e neutro</td>
+                            <td>Pessoal e emotivo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Linguagem</strong></td>
+                            <td>Denotativa (literal)</td>
+                            <td>Conotativa (figurada)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pessoa verbal</strong></td>
+                            <td>3ª pessoa</td>
+                            <td>1ª ou 2ª pessoa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Adjetivos</strong></td>
+                            <td>Descritivos e neutros</td>
+                            <td>Valorativos e expressivos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="next-section">
+                <button class="btn btn--primary" onclick="goToSection('exemplos')">Ver Exemplos Práticos →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Exemplos -->
+    <section id="exemplos" class="section">
+        <div class="container">
+            <h1>💡 Exemplos Interativos</h1>
+            <p class="section-intro">Vê como o mesmo tema pode ser apresentado de forma objetiva ou subjetiva. Clica nos botões para alternar entre as versões!</p>
+            
+            <div class="examples-container" id="examplesContainer">
+                <!-- Os exemplos serão carregados dinamicamente pelo JavaScript -->
+            </div>
+            
+            <div class="next-section">
+                <button class="btn btn--primary" onclick="goToSection('exercicios')">Praticar com Exercícios →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Exercícios -->
+    <section id="exercicios" class="section">
+        <div class="container">
+            <h1>🏆 Exercícios Práticos</h1>
+            
+            <div class="exercise-nav">
+                <button class="exercise-tab active" data-exercise="identificacao">Exercício 1: Identificação</button>
+                <button class="exercise-tab" data-exercise="transformacao">Exercício 2: Transformação</button>
+                <button class="exercise-tab" data-exercise="criacao">Exercício 3: Criação</button>
+            </div>
+            
+            <!-- Exercício 1: Identificação -->
+            <div id="ex-identificacao" class="exercise-content active">
+                <h2>🔍 Exercício 1: Identificação</h2>
+                <p>Classifica cada frase como objetiva ou subjetiva:</p>
+                
+                <div id="identificationQuestions" class="questions-container">
+                    <!-- Perguntas carregadas dinamicamente -->
+                </div>
+                
+                <div class="exercise-results" id="identificationResults" style="display: none;">
+                    <h3>Resultados:</h3>
+                    <div class="score-display" id="identificationScore"></div>
+                    <button class="btn btn--secondary" onclick="resetIdentificationExercise()">Repetir Exercício</button>
+                </div>
+            </div>
+            
+            <!-- Exercício 2: Transformação -->
+            <div id="ex-transformacao" class="exercise-content">
+                <h2>🔄 Exercício 2: Transformação</h2>
+                <p>Transforma estas frases subjetivas em frases objetivas:</p>
+                
+                <div id="transformationQuestions" class="questions-container">
+                    <!-- Perguntas carregadas dinamicamente -->
+                </div>
+            </div>
+            
+            <!-- Exercício 3: Criação -->
+            <div id="ex-criacao" class="exercise-content">
+                <h2>✍️ Exercício 3: Criação</h2>
+                <p>Escreve frases sobre os temas dados usando linguagem objetiva e subjetiva:</p>
+                
+                <div class="creation-exercises">
+                    <div class="creation-task">
+                        <h3>Tema: O teu animal de estimação</h3>
+                        <div class="creation-inputs">
+                            <div class="input-group">
+                                <label for="pet-objective">Frase objetiva:</label>
+                                <textarea id="pet-objective" placeholder="Exemplo: O meu cão tem 3 anos e pesa 15kg."></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="pet-subjective">Frase subjetiva:</label>
+                                <textarea id="pet-subjective" placeholder="Exemplo: O meu cão é o companheiro mais fiel e carinhoso do mundo."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="creation-task">
+                        <h3>Tema: A tua escola</h3>
+                        <div class="creation-inputs">
+                            <div class="input-group">
+                                <label for="school-objective">Frase objetiva:</label>
+                                <textarea id="school-objective" placeholder="Escreve uma frase objetiva sobre a tua escola..."></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="school-subjective">Frase subjetiva:</label>
+                                <textarea id="school-subjective" placeholder="Escreve uma frase subjetiva sobre a tua escola..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn--primary" onclick="evaluateCreationExercise()">Avaliar Respostas</button>
+                <div id="creationFeedback" class="feedback-container"></div>
+            </div>
+            
+            <div class="next-section">
+                <button class="btn btn--primary" onclick="goToSection('quiz')">Fazer Quiz Final →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Quiz -->
+    <section id="quiz" class="section">
+        <div class="container">
+            <h1>🎖️ Quiz Final</h1>
+            
+            <div id="quizStart" class="quiz-start">
+                <h2>Testa os teus conhecimentos!</h2>
+                <p>Quiz com 15 perguntas sobre linguagem objetiva e subjetiva.</p>
+                <ul class="quiz-info">
+                    <li>✓ Perguntas de múltipla escolha</li>
+                    <li>✓ Feedback imediato após cada resposta</li>
+                    <li>✓ Classificação final com percentagem</li>
+                    <li>✓ Certificado digital para os melhores resultados</li>
+                </ul>
+                <button class="btn btn--primary btn--lg" onclick="startQuiz()">Começar Quiz</button>
+            </div>
+            
+            <div id="quizContent" class="quiz-content" style="display: none;">
+                <div class="quiz-progress">
+                    <span id="questionCounter">Pergunta 1 de 15</span>
+                    <div class="quiz-progress-bar">
+                        <div id="quizProgressFill" class="quiz-progress-fill"></div>
+                    </div>
+                </div>
+                
+                <div id="quizQuestion" class="quiz-question">
+                    <!-- Pergunta carregada dinamicamente -->
+                </div>
+            </div>
+            
+            <div id="quizResults" class="quiz-results" style="display: none;">
+                <h2>🎉 Quiz Concluído!</h2>
+                <div id="finalScore" class="final-score"></div>
+                <div id="certificate" class="certificate"></div>
+                <div class="quiz-actions">
+                    <button class="btn btn--primary" onclick="restartQuiz()">Repetir Quiz</button>
+                    <button class="btn btn--secondary" onclick="goToSection('resumo')">Ver Resumo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Resumo -->
+    <section id="resumo" class="section">
+        <div class="container">
+            <h1>📋 Resumo e Recursos</h1>
+            
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <h2>🎯 Conceitos-chave</h2>
+                    <ul class="key-concepts">
+                        <li><strong>Linguagem Objetiva:</strong> Factos, imparcialidade, informação</li>
+                        <li><strong>Linguagem Subjetiva:</strong> Opiniões, sentimentos, expressão pessoal</li>
+                        <li><strong>Denotação:</strong> Sentido literal das palavras</li>
+                        <li><strong>Conotação:</strong> Sentido figurado e expressivo</li>
+                    </ul>
+                </div>
+                
+                <div class="summary-card">
+                    <h2>✅ Lista de Verificação</h2>
+                    <p>Para identificar o tipo de linguagem, pergunta:</p>
+                    <ul class="checklist">
+                        <li>□ O texto apresenta factos ou opiniões?</li>
+                        <li>□ Há adjetivos valorativos?</li>
+                        <li>□ Que pessoa verbal é usada?</li>
+                        <li>□ O tom é neutro ou emotivo?</li>
+                        <li>□ O objetivo é informar ou expressar?</li>
+                    </ul>
+                </div>
+                
+                <div class="summary-card">
+                    <h2>📚 Glossário</h2>
+                    <div class="glossary">
+                        <div class="glossary-term">
+                            <strong>Denotação:</strong> Significado literal e direto das palavras
+                        </div>
+                        <div class="glossary-term">
+                            <strong>Conotação:</strong> Significado figurado e expressivo das palavras
+                        </div>
+                        <div class="glossary-term">
+                            <strong>Imparcialidade:</strong> Ausência de opinião pessoal ou preferência
+                        </div>
+                        <div class="glossary-term">
+                            <strong>Juízo de valor:</strong> Opinião pessoal sobre algo
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="summary-card">
+                    <h2>🏆 O teu Progresso</h2>
+                    <div id="progressSummary" class="progress-summary">
+                        <!-- Progresso carregado dinamicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
